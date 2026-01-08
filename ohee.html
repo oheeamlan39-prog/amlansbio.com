@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mir Safayet Islam | Gaming Influencer</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 60px 20px;
+            z-index: 10;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .profile-img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 10px solid #00ffcc;
+            box-shadow: 0 0 50px #00ffcc;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 5em;
+            margin: 20px 0;
+            text-shadow: 0 0 25px #00ffcc;
+            letter-spacing: 3px;
+        }
+
+        .insta-handle {
+            font-size: 2.5em;
+            color: #ff00aa;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .influencer-tag {
+            font-size: 2.8em;
+            color: #00ffcc;
+            margin: 30px 0;
+            font-style: italic;
+        }
+
+        .bio-section {
+            font-size: 2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(0, 255, 204, 0.1);
+            border-radius: 20px;
+            border: 2px solid #00ffcc;
+        }
+
+        .section-title {
+            font-size: 3em;
+            margin: 60px 0 30px;
+            color: #00ffcc;
+            text-shadow: 0 0 15px #00ffcc;
+        }
+
+        .content-text {
+            font-size: 1.8em;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto 50px;
+        }
+
+        .skills {
+            margin: 60px 0;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: linear-gradient(45deg, #00ffcc, #ff00aa);
+            color: #000;
+            padding: 18px 40px;
+            margin: 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.6em;
+        }
+
+        .social {
+            margin: 80px 0;
+        }
+
+        .social a {
+            color: #00ffcc;
+            font-size: 4.5em;
+            margin: 0 40px;
+            text-decoration: none;
+            transition: 0.4s;
+        }
+
+        .social a:hover {
+            color: #ff00aa;
+            transform: scale(1.4) rotate(10deg);
+        }
+
+        /* Solar System Background */
+        .solar-system {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .sun {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 140px;
+            height: 140px;
+            background: radial-gradient(circle, #ffff00, #ff8800);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 100px #ffaa00;
+        }
+
+        .orbit {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 2px solid rgba(0, 255, 255, 0.4);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .planet {
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+
+        .mercury-orbit { width: 350px; height: 350px; animation: orbit 10s linear infinite; }
+        .mercury { background: #a89984; width: 25px; height: 25px; }
+
+        .venus-orbit { width: 500px; height: 500px; animation: orbit 16s linear infinite; }
+        .venus { background: #e6c194; width: 45px; height: 45px; }
+
+        .earth-orbit { width: 700px; height: 700px; animation: orbit 22s linear infinite; }
+        .earth { background: linear-gradient(90deg, #2a6fff 40%, #3bb54a 60%); width: 50px; height: 50px; }
+
+        .mars-orbit { width: 850px; height: 850px; animation: orbit 28s linear infinite; }
+        .mars { background: #cd5c5c; width: 40px; height: 40px; }
+
+        @keyframes orbit {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .profile-img { width: 220px; height: 220px; }
+            h1 { font-size: 3.8em; }
+            .insta-handle { font-size: 2em; }
+            .influencer-tag { font-size: 2.2em; }
+            .bio-section { font-size: 1.6em; padding: 20px; }
+            .section-title { font-size: 2.5em; }
+            .content-text { font-size: 1.5em; }
+            .skill-tag { font-size: 1.3em; padding: 15px 30px; }
+            .social a { font-size: 3.5em; }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="solar-system">
+        <div class="sun"></div>
+        <div class="orbit mercury-orbit"><div class="planet mercury"></div></div>
+        <div class="orbit venus-orbit"><div class="planet venus"></div></div>
+        <div class="orbit earth-orbit"><div class="planet earth"></div></div>
+        <div class="orbit mars-orbit"><div class="planet mars"></div></div>
+    </div>
+
+    <div class="container">
+        <img src="https://files.groovy.bot/share/670e0b7f8b8b8.jpeg" alt="Mir Safayet Islam" class="profile-img">
+        
+        <h1>Mir Safayet Islam</h1>
+        
+        <p class="insta-handle">@noxera_safayet</p>
+        
+        <p class="influencer-tag">Gaming Influencer 🎮 | Content Creator</p>
+
+        <div class="bio-section">
+            I love games like my life ❤️<br>
+            Gaming is my passion, my lifestyle, my everything!<br>
+            Every day I bring new gameplay, tips, funny moments, and editing magic for you.
+        </div>
+
+        <h2 class="section-title">About Me</h2>
+        <p class="content-text">
+            I'm Mir Safayet Islam – a passionate gamer and content creator.<br>
+            Alongside school life, I spend my days gaming and video editing.<br>
+            My goal is to share the best gaming moments with you and build a big gaming community.
+        </p>
+
+        <h2 class="section-title">My Content</h2>
+        <p class="content-text">
+            🎮 Free Fire, PUBG, Call of Duty – epic gameplay of all games<br>
+            🔥 Funny moments, clutches, 1 vs 4 squad wipes<br>
+            ✂️ Creative video editing and cinematic montages<br>
+            💡 Gaming tips, tricks, and rank push guides
+        </p>
+
+        <div class="skills">
+            <span class="skill-tag">Gaming</span>
+            <span class="skill-tag">Video Editing</span>
+            <span class="skill-tag">Content Creator</span>
+        </div>
+
+        <h2 class="section-title">Follow Me</h2>
+        <div class="social">
+            <a href="https://www.instagram.com/noxera_safayet" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
